@@ -1,38 +1,20 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 10px; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.no-scrollbar::-webkit-scrollbar {
+
+
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: linear-gradient(177.32deg, #888989 5.6%, #4A4E54 93.28%);
+  box-shadow: 4px 4px 4.9px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
